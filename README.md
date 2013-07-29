@@ -18,7 +18,7 @@ Notice that this script currently depend on jQuery.
 
 ### Usage
 
-    Texure(element, options, drawer)
+    Texure(element, options, drawer);
 
 - `element` - DOM element that will receive generated image as `background-image` property.
 Notice that background images can stack, so you can use this to add random noise to 
