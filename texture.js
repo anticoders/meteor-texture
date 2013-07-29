@@ -8,9 +8,11 @@ Texture = function(div, options, drawer) {
 
   if(!drawer) return;
 
+  var $div = $(div);
+
   if(options && options.name && options.name.match(/^\w+$/)) {
-    if($(div).data('__texture_' + options.name + '_was_set__')) return;
-    $(div).data('__texture_' + options.name + '_was_set__', true);
+    if($div.data('__texture_' + options.name + '_was_set__')) return;
+    $div.data('__texture_' + options.name + '_was_set__', true);
   }
 
   var imageW = (options ? options.width : 512) || 512;
@@ -34,7 +36,7 @@ Texture = function(div, options, drawer) {
   }
   if(drawer.post) drawer.post(ctx, result, imageW, imageH);
 
-  $(div).css({
+  $div.css({
     'background-image': 'url(' + canvas.toDataURL("image/png") + '),' + $(div).css('background-image'),
   });
 
