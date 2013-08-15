@@ -4,7 +4,9 @@ Package.describe({
 
 Package.on_use(function (api, where) {
   
-  api.export('Texture');
+  if(api.export) {
+    api.export('Texture', 'client');
+  }
 
   api.add_files('texture.js', 'client');
 
