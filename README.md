@@ -1,3 +1,8 @@
+Notes for updating to Meteor 0.9.0
+----------------------------------
+
+This package is now called `anti:texture`.
+
 
 
 ## Texture.js
@@ -10,7 +15,7 @@ This simple snipped is intended for ease image generation when designing a web p
 
 For Meteor.js projects, simply use
 
-    mrt add texture
+    meteor add anti:texture
 
 For other applications, download `texture.js` file from this repo and add it to your project.
 Notice that this script currently depend on jQuery.
