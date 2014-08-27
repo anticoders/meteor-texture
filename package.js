@@ -1,7 +1,7 @@
 Package.describe({
-  summary:  "Programatically generate background images".
+  summary:  "Programatically generate background images",
   name:     "anti:texture",
-  version:  "0.3.1",
+  version:  "0.3.2",
   git:      "https://github.com/anticoders/meteor-texture.git",
 });
 
